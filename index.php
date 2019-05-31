@@ -62,7 +62,8 @@ if(isset($accessToken)){
     $_SESSION['userData'] = $userData;
     
     // Get logout url
-    $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL.'logout.php');
+    // $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL.'logout.php');
+    // print_r($logoutURL);
     
     // Render facebook profile data
     // print_r($userData);
@@ -75,7 +76,7 @@ if(isset($accessToken)){
         $output .= '<br/>Name : '.$userData['first_name'].' '.$userData['last_name'];
         $output .= '<br/>Email : '.$userData['email'];
         $output .= '<br/>Logged in with : Facebook';
-        $output .= '<br/>Logout from <a href="'.$logoutURL.'">Facebook</a>'; 
+        $output .= '<br/>Logout from <a href="./logout.php">Facebook</a>'; 
 
         // print_r($output);
         // header("Location:index.php");
@@ -91,7 +92,7 @@ if(isset($accessToken)){
     
     // Render facebook login button
     $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="images/login-button-png.png"></a>';
-    $output = '<a href="'.htmlspecialchars($loginURL).'"></a>';
+    // $output = '<a href="'.htmlspecialchars($loginURL).'"></a>';
     // echo $output;
 }
 
@@ -104,7 +105,7 @@ if(isset($accessToken)){
     <body>
         <br><br><br>
     <div class="container">
-    <h2 class="alert alert-info">How to create facebook login in php</h2>
+    <h2 class="alert alert-info">facebook login in php</h2>
     <div class="row">
     <div><?php echo $output; ?> </div>
     </div>

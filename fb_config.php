@@ -19,8 +19,7 @@ use Facebook\Exceptions\FacebookSDKException;
  
 $appId         = "586918128384261"; //facebook app id
 $appSecret     ="8ad11fd1cf21b54be680d8f9c4258098"; //facebook app secret
-// $fbappid = "586918128384261"; 
-// $fbappsecret = "8ad11fd1cf21b54be680d8f9c4258098"; 
+
 $redirectURL   = 'http://localhost/LoginWithPhp/index.php'; 
  
 //Callback URL
