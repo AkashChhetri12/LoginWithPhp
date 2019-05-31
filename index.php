@@ -61,10 +61,6 @@ if(isset($accessToken)){
     // Put user data into session
     $_SESSION['userData'] = $userData;
     
-    // Get logout url
-    // $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL.'logout.php');
-    // print_r($logoutURL);
-    
     // Render facebook profile data
     // print_r($userData);
     if(!empty($userData)){
@@ -92,8 +88,6 @@ if(isset($accessToken)){
     
     // Render facebook login button
     $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="images/login-button-png.png"></a>';
-    // $output = '<a href="'.htmlspecialchars($loginURL).'"></a>';
-    // echo $output;
 }
 
 ?>
